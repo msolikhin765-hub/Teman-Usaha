@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand-50: #eefaf5;
+  --color-brand-100: #d5f2e5;
+  --color-brand-200: #aee4cd;
+  --color-brand-300: #79cfae;
+  --color-brand-400: #43b38b;
+  --color-brand-500: #219872;
+  --color-brand-600: #157a5c;
+  --color-brand-700: #12624c;
+  --color-brand-800: #114e3e;
+  --color-brand-900: #0f4034;
+  --color-brand-950: #07241d;
+
+  --color-accent-50: #fff8eb;
+  --color-accent-100: #feeac7;
+  --color-accent-300: #fcbf4b;
+  --color-accent-400: #fba724;
+  --color-accent-500: #f5850b;
+  --color-accent-600: #d96206;
+
+  --color-ink: #13201c;
+  --color-muted: #5b6b66;
+  --color-line: #e3e9e6;
+  --color-canvas: #f6f8f7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hasil AI: tampilan teks yang rapi */
+.ai-output {
+  white-space: pre-wrap;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fade-up 0.35s ease-out both;
+}
